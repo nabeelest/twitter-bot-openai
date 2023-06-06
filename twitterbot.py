@@ -1,13 +1,12 @@
 import tweepy
 import openai
 
-AI_KEY = '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'
-quote_key = 'X7TVTxa71QtTIfvrtaEUUg==IcJ5BldVQ0r6OvYg'
-api_key = "Kbac48DDrpOyD02en72ELZL7z"
-api_secret = "Tnu10IIzpGPSJ7PKUmY43sRBzbC9e1D3j0QMh4fZen0SqYv3im"
-access_token = "1624851913345994753-96411rQhCbtICx3U0GFrsPaV2Da7BY"
-access_token_secret = "aE2pW1TEJIjRXU2marMx1f2kn8PAFRmLqCz6qxvh89zoi"
-bearer_token = r"AAAAAAAAAAAAAAAAAAAAAD1fnAEAAAAAe3GNoV5R9IxdAvVz%2Fszjtetu5bU%3DWAPm72xaY8r5Cac6IWGECrVhMCPkeYMQ7AqDS0IozHkQtdQCSz"
+quote_key = os.environ["ai_key"]
+api_key = os.environ["api_key"]
+api_secret = os.environ["api_secret"]
+access_token = os.environ["access_token"]
+access_token_secret = os.environ["access_token_secret"]
+bearer_token = os.environ["bearer_token"]
 
 client = tweepy.Client(
     consumer_key=api_key,
