@@ -1,5 +1,6 @@
 import tweepy
 import openai
+import random
 
 AI_key = os.environ["ai_key"]
 api_key = os.environ["api_key"]
@@ -20,8 +21,12 @@ api = tweepy.API(auth)
 
 openai.api_key = AI_KEY
 
+words = ['sad','friends','sad and kind of poetic','heartbroken','life','about how people can hurt sometimes','relationships','movies']
+category = random.choice(words)
+
 # Define your prompt
-prompt = "write a melancholic tweet about life, don't add any hashtags and try writing in no-caps"
+prompt = f"write a melancholic tweet about {category}, don't add any hashtags and try writing in no-caps"
+
 
 # Call the API
 response = openai.Completion.create(
