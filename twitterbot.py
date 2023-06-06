@@ -1,7 +1,7 @@
 import tweepy
 import openai
 
-quote_key = os.environ["ai_key"]
+AI_key = os.environ["ai_key"]
 api_key = os.environ["api_key"]
 api_secret = os.environ["api_secret"]
 access_token = os.environ["access_token"]
