@@ -1,6 +1,7 @@
 import tweepy
 import openai
 import random
+import os
 
 AI_KEY = os.environ["ai_key"]
 api_key = os.environ["api_key"]
