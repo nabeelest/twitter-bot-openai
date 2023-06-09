@@ -22,7 +22,7 @@ api = tweepy.API(auth)
 
 openai.api_key = AI_KEY
 
-words = ['sad','friends','sad and kind of poetic','loss','loved ones','recluse','solitude','heartbroken','life','about how people can hurt sometimes','relationships','movies']
+words = ['sad','friends','good old days','mom','the cheering days','stress in studies','having a bad day','crying at night','god','retrospection','sad and kind of poetic','loss','loved ones','recluse','solitude','heartbroken','life','about how people can hurt sometimes','relationships','movies']
 category = random.choice(words)
 
 # Define your prompt
