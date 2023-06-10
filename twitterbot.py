@@ -22,11 +22,11 @@ api = tweepy.API(auth)
 
 openai.api_key = AI_KEY
 
-words = ['sad','friends','good old days','mom','the cheering days','stress in studies','having a bad day','crying at night','god','retrospection','sad and kind of poetic','loss','loved ones','recluse','solitude','heartbroken','life','about how people can hurt sometimes','relationships','movies']
+words = ["carl jung's philosophy","mahmoud darwish's philosophy","albert camus philosophy of heartbreak","Alan Watts philosophy on love","philosophy of life","philosophy of love","philosophy of heartbreak"]
 category = random.choice(words)
 
 # Define your prompt
-prompt = f"write a melancholic tweet about {category}, don't add any hashtags and try writing in no-caps"
+prompt = f"write a melancholic tweet about {category} without mentioning author, don't add any hashtags or special characters and try writing in no-caps."
 
 
 # Call the API
