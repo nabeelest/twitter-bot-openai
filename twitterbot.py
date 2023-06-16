@@ -22,7 +22,7 @@ api = tweepy.API(auth)
 
 openai.api_key = AI_KEY
 
-words = ["carl jung's philosophy","mahmoud darwish's philosophy","albert camus's philosophy","Alan Watts philosophy","philosophy of love","philosophy of heartbreak","life in general","philosophy of university life","mothers","the good old days","poetry","teenage"]
+words = ["carl jung's philosophy","solitude","social media detox","mahmoud darwish's philosophy","albert camus's philosophy","Alan Watts philosophy","philosophy of love","philosophy of heartbreak","life in general","philosophy of university life","the good old days","poetry","teenage"]
 category = random.choice(words)
 
 # Define your prompt
