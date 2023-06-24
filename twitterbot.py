@@ -22,7 +22,7 @@ api = tweepy.API(auth)
 
 openai.api_key = AI_KEY
 
-words = ["Somberness","Nostalgia","Introspecting oneself","Wistful thought","Transcendent thought","Poignant thought","feeling Vulnerable","Melancholia","Connections with people","Resilience","carl jung's philosophy","solitude","social media detox","mahmoud darwish's philosophy","albert camus's philosophy","Alan Watts philosophy","philosophy of love","philosophy of heartbreak","life in general","the good old days","poetry","teenage"]
+words = ["how bad i miss her","being hopeful about her","Melodramatic feeling about her","heartbreak","romantic feelings","Enigmatic feeling","Heartfelt feelings about her","Mystical feelings","Contemplative thought","being Cynical","Thought-provoking thing","Whimsical thoughts","Somberness","Nostalgia","Introspecting oneself","Wistful thought","Transcendent thought","Poignant thought","feeling Vulnerable","Melancholia","Connections with people","Resilience","carl jung's philosophy","solitude","social media detox","mahmoud darwish's philosophy","albert camus's philosophy","Alan Watts philosophy","philosophy of love","philosophy of heartbreak","life in general","the good old days","poetry","teenage"]
 category = random.choice(words)
 
 # Define your prompt
@@ -36,7 +36,7 @@ response = openai.Completion.create(
   max_tokens=100,
   n=1,
   stop=None,
-  temperature=0.7
+  temperature=0.9
 )
 
 # Extract the generated text from the API response
