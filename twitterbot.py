@@ -26,7 +26,7 @@ words = ["how bad i miss her","being hopeful about her","Melodramatic feeling ab
 category = random.choice(words)
 
 # Define your prompt
-prompt = f"write a melancholic tweet about {category}, don't add any hashtags or special characters and try writing in no-caps."
+prompt = f"tweet a quote from a movie with movie name. don't add any hashtags, quotations or special characters and try writing in no-caps."
 
 
 # Call the API
@@ -36,7 +36,7 @@ response = openai.Completion.create(
   max_tokens=100,
   n=1,
   stop=None,
-  temperature=0.9
+  temperature=1.0
 )
 
 # Extract the generated text from the API response
